@@ -14,9 +14,8 @@ import helloReducer from './reducer/hello'
 import { APP_CONTAINER_SELECTOR } from '../shared/config'
 import { isProd } from '../shared/util'
 
-/* eslint-disable no-underscore-dangle */
+// eslint-disable-next-line no-underscore-dangle
 const composeEnhancers = (isProd ? null : window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose
-/* eslint-enable no-underscore-dangle */
 
 const store = createStore(combineReducers({ hello: helloReducer }),
   composeEnhancers(applyMiddleware(thunkMiddleware)))
@@ -35,9 +34,8 @@ ReactDOM.render(wrapApp(App, store), rootEl)
 if (module.hot) {
   // flow-disable-next-line
   module.hot.accept('./app', () => {
-    /* eslint-disable global-require */
+    // eslint-disable-next-line global-require
     const NextApp = require('./app').default
-    /* eslint-enable global-require */
     ReactDOM.render(wrapApp(NextApp, store), rootEl)
   })
 }
