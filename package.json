@@ -6,12 +6,12 @@
   "license": "MIT",
   "scripts": {
     "test": "yarn 01 && yarn 02 && yarn 03 && yarn 04 && yarn 05 && yarn 06 && yarn 07",
-    "01": "cd 01-node-yarn-package-json/code && yarn && yarn start",
-    "02": "cd 02-babel-es6-eslint-flow-jest-husky/code && yarn && yarn test && yarn start",
-    "03": "cd 03-express-nodemon-pm2/code && yarn && yarn test",
-    "04": "cd 04-webpack-react-hmr/code && yarn && yarn prepush",
-    "05": "cd 05-redux-immutable-fetch/code && yarn && yarn prepush",
-    "06": "cd 06-react-router-ssr-helmet/code && yarn && yarn prepush",
-    "07": "cd 07-socket-io/code && yarn && yarn prepush"
+    "01": "cd 01-node-yarn-package-json && yarn && yarn start",
+    "02": "cd 02-babel-es6-eslint-flow-jest-husky && yarn && yarn test && yarn start",
+    "03": "cd 03-express-nodemon-pm2 && yarn && yarn test",
+    "04": "cd 04-webpack-react-hmr && yarn && yarn prepush",
+    "05": "cd 05-redux-immutable-fetch && yarn && yarn prepush",
+    "06": "cd 06-react-router-ssr-helmet && yarn && yarn prepush",
+    "07": "cd 07-socket-io && yarn && yarn prepush"
   }
 }
