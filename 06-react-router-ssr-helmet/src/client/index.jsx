@@ -2,7 +2,7 @@
 
 import 'babel-polyfill'
 
-import * as Immutable from 'immutable'
+import Immutable from 'immutable'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
