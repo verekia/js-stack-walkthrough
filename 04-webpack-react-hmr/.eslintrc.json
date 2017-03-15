@@ -4,7 +4,8 @@
     "plugin:flowtype/recommended"
   ],
   "plugins": [
-    "flowtype"
+    "flowtype",
+    "compat"
   ],
   "env": {
     "browser": true,
@@ -12,6 +13,7 @@
   },
   "rules": {
     "semi": [2, "never"],
-    "no-unexpected-multiline": 2
+    "no-unexpected-multiline": 2,
+    "compat/compat": 2
   }
 }
